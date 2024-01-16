@@ -2,6 +2,7 @@
 layout: post
 title:  "Welcome to Jekyll!"
 date:   2024-01-16 18:12:15 +0900
+published: false
 categories: jekyll update
 permalink: /post/:title
 ---
