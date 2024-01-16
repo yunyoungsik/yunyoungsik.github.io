@@ -1,7 +1,7 @@
 title: "0-Sik Blog"
 email: yunyoungsik91@gmail.com
 timezone: Asia/Seoul
-baseurl: "https://yunyoungsik.github.io"
+baseurl: "https://yunyoungsik.github.io/"
 permalink: "/:title/"
 logo: 'assets/images/logo.png'
 favicon: 'assets/images/favicon.ico'
