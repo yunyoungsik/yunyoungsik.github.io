@@ -1,13 +1,13 @@
 ---
 ---
 
-@import "plain";
+@import "../../_sass/plain";
 
 {% if site.plainwhite.search %}
-  @import "search";
+  @import "../../_sass/search.scss";
 {% endif %}
 
 {%- if site.plainwhite.dark_mode -%}
-  @import "toggle";
-  @import "dark";
+  @import "../../_sass/toggle.scss";
+  @import "../../_sass/dark.scss";
 {%- endif -%}
