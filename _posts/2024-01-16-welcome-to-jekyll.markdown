@@ -2,7 +2,7 @@
 layout: post
 title: 프로그래머스 - 배열의 평균
 date: '2024-01-16 18:12:15 +0900'
-published: false
+published: true
 categories: Programmers Javascript
 permalink: '/post/:title'
 ---
