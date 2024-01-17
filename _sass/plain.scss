@@ -123,6 +123,10 @@ main {
         flex-direction: column;
         align-items: center;
         margin-bottom: 17px;
+        img {
+          border: 1px solid rgba(0,0,0,0.05);
+          border-radius: 50%;
+        }
       }
     }
   }
@@ -314,8 +318,6 @@ footer {
         margin-bottom: 10px;
         img {
           max-height: 40px;
-          border-radius: 50%;
-          border: 1px solid grba(0,0,0,0.15);
         }
         h2 {
           margin: 0 10px;
