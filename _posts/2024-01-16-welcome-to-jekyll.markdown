@@ -1,33 +1,32 @@
 ---
 layout: post
-title:  "Welcome to Jekyll!"
-date:   2024-01-16 18:12:15 +0900
+title: 프로그래머스 - 배열의 평균
+date: '2024-01-16 18:12:15 +0900'
 published: false
-categories: jekyll update
-permalink: /post/:title
+categories: Programmers Javascript
+permalink: '/post/:title'
 ---
-bundle exec jekyll serve
+## 문제
 
-You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
+정수 배열 numbers가 매개변수로 주어집니다. numbers의 원소의 평균값을 return하도록 solution 함수를 완성해주세요.
 
-Jekyll requires blog post files to be named according to the following format:
+## 정답
 
-`YEAR-MONTH-DAY-title.MARKUP`
+```
+function solution(numbers) {
+    let sum = 0;
+    let result = 0;
 
-Where `YEAR` is a four-digit number, `MONTH` and `DAY` are both two-digit numbers, and `MARKUP` is the file extension representing the format used in the file. After that, include the necessary front matter. Take a look at the source for this post to get an idea about how it works.
+    for (let i = 0; i < numbers.length; i++){
+      sum += numbers[i];
+    }
 
-Jekyll also offers powerful support for code snippets:
+    result = sum / numbers.length
 
-{% highlight ruby %}
-def print_hi(name)
-  puts "Hi, #{name}"
-end
-print_hi('Tom')
-#=> prints 'Hi, Tom' to STDOUT.
-{% endhighlight %}
-
-Check out the [Jekyll docs][jekyll-docs] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll’s GitHub repo][jekyll-gh]. If you have questions, you can ask them on [Jekyll Talk][jekyll-talk].
-
-[jekyll-docs]: https://jekyllrb.com/docs/home
-[jekyll-gh]:   https://github.com/jekyll/jekyll
-[jekyll-talk]: https://talk.jekyllrb.com/
+    return result;
+}
+```
+1. sum 변수와 result 변수를 초기화합니다. sum은 배열의 원소들을 더해나갈 변수이고, result는 최종적으로 반환할 평균값을 저장할 변수입니다.
+2. for 루프를 사용하여 배열 numbers의 각 원소를 순회합니다. 루프 내부에서 현재 원소를 sum에 더해나갑니다.
+3. 모든 원소를 더한 후, numbers.length로 나누어 평균값을 계산합니다. 이 값을 result에 저장합니다.
+4. 최종적으로 계산된 평균값인 result를 반환합니다.
