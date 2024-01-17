@@ -249,6 +249,11 @@ main {
   line-height: 1.9em;
   p {
     margin-top: 10px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2; 
+    -webkit-box-orient: vertical;
   }
   a {
     color: $linkColor;
@@ -309,6 +314,8 @@ footer {
         margin-bottom: 10px;
         img {
           max-height: 40px;
+          border-radius: 50%;
+          border: 1px solid grba(0,0,0,0.15);
         }
         h2 {
           margin: 0 10px;
@@ -338,4 +345,9 @@ footer {
 // comment
 .utterances {
   max-width: none !important;
+}
+
+// font
+* {
+  font-family: 'NanumSquareNeo-Variable' !important;
 }
