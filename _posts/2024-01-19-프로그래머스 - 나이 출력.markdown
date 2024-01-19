@@ -1,0 +1,25 @@
+---
+layout: post
+title: 프로그래머스 - 나이 출력
+date: '2024-01-19 10:11:00 +0900'
+published: true
+categories: Programmers Javascript
+permalink: '/post/:title'
+---
+## 문제
+머쓱이는 40살인 선생님이 몇 년도에 태어났는지 궁금해졌습니다. 나이 age가 주어질 때, 2022년을 기준 출생 연도를 return 하는 solution 함수를 완성해주세요.
+
+## 정답
+```javascript
+function solution(age) {
+    var answer = 0;
+    if(0 < age && age <=120) {
+        answer = 2022 - (age - 1);
+    }
+    return answer;
+}
+```
+1. var answer = 0;: 결과를 저장할 변수 answer를 초기화합니다.
+2. if(0 < age && age <=120): 나이 age가 0보다 크고 120 이하인 경우에만 아래의 계산을 수행합니다. 이 범위 내에서는 합리적으로 나이로 간주할 수 있는 범위입니다.
+3. answer = 2022 - (age - 1);: 현재 연도인 2022년을 기준으로, 나이를 이용하여 출생 연도를 계산합니다. 나이에서 1을 빼는 이유는, 아직 생일이 오지 않은 경우 현재 날짜를 기준으로 나이를 계산하기 때문입니다.
+4. return answer;: 최종적으로 계산된 출생 연도를 반환합니다.
